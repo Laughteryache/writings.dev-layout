@@ -1,0 +1,101 @@
+/* Chip */
+
+.chip {
+    font-family: 'Recursive', sans-serif;
+    font-style: italic;
+    font-size: 27px;
+    line-height: 120%;
+    border: none;
+    background: none;
+    color: var(--color-chip);
+    cursor: pointer;
+}
+
+.chip:hover {
+    color: var(--border-color)
+}
+
+@media (max-width: 960px) {
+    .chip {
+        font-size: 20px;
+    }
+}
+
+/* Article */
+
+.article {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 26px;
+    background-color: var(--color-text);
+    border: 1px solid #252930;
+    border-radius: var(--border-radius-22);
+    max-height: var(--article-height);
+    cursor: pointer;
+}
+
+.article:hover {
+    background-color: var(--color-article-hover);
+}
+
+.article__hero {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.article__paragraph {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.article__footer {
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+} 
+
+@media (max-width: 465px) {
+    .article {
+        width: calc(var(--article-width) - 20px)
+    }
+}
+
+@media (max-width: 425px) {
+    .article {
+        width: calc(var(--article-width) - 40px)
+    }
+}
+
+/* Paggination page */
+
+.paggination__page {
+    padding: 15px;
+    width: 55px;
+    background: none;
+    border: none;
+    font-size: 25px;
+    color: var(--color-chip);
+    font-weight: 700;
+    font-family: 'Recursive', sans-serif;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.paggination__page:hover {
+    color: var(--color-pink);
+}
+
+.page__active {
+    color: var(--color-pink);
+    border-top: 3px solid var(--color-pink);
+}
+
+@media (max-width: 640px) {
+    .paggination__page {
+        font-size: 20px;
+    }
+}

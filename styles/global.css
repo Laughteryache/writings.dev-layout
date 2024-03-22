@@ -1,0 +1,34 @@
+:root {
+    --layout-width: 1236px;
+    --background-color: #232830;
+    --color-text: #FFFFFF;
+    --color-link-hover: #d3d3d3;
+    --color-article-hover: #f1f1f1;
+    --color-pink: #FF7575;
+    --color-chip: #909090;
+    --border-color: #4D4D4D;
+    --border-radius-22: 22px;
+    --article-width: 390px;
+    --article-height: 440px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    font-weight: 400;
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: none;
+}
